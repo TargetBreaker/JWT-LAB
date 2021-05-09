@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Registration</title>
+    <meta name='viewport' content="width=device-width">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Kaushan Script|Lora">
     <link rel='stylesheet' href='style.css'>
@@ -17,6 +18,9 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="Registration.html">Register</a></li>
             <li><a href="Alumni.html">Alumni</a></li>
+            <li><a href='#Placement'>Student personal Info</a></li>
+            <li><a href='#Placement'>Student Academic Info</a></li>
+            <li><a href='about.html'>About</a></li>
           </ul>
         </nav>
       </div>
@@ -24,19 +28,19 @@
     <marquee direction="right" bgcolor=#e8491d>........Admissions Open For All Classes........</marquee>
     <div class='Register'>
     <h2>Student Registration</h2>
-    <form>
+    <form id='stuRegister'>
         <pre>
-        <b>First-Name         :</b><input type="text" placeholder="First-Name"><br>
-        <b>Last-Name          :</b><input type="text" placeholder="Last-Name"><br>
-        <b>Mobile Number   :</b><input type="text" placeholder="Mobile Number"><br>
-        <b>Roll Number        :</b><input type="text" placeholder="Roll Number "><br>
-        <b>Password              :</b><input type="text" placeholder="Password"><br>
-        <b>Confirm Password:</b><input type="text" placeholder="Confirm Password"><br>
+        <b>First-Name         : </b><input type="text" placeholder="First-Name" id='firstName'><br>
+        <b>Last-Name          : </b><input type="text" placeholder="Last-Name" id='lastName'><br>
+        <b>Mobile Number   : </b><input type="text" placeholder="Mobile Number" id='mobnum'><br>
+        <b>Roll Number        : </b><input type="text" placeholder="Roll Number " id='rollNumber'><br>
+        <b>Password              : </b><input type="password" placeholder="Password" id='pass1'><br>
+        <b>Confirm Password: </b><input type="text" placeholder="Confirm Password" id='pass2'><br>
+        <input type='submit' value='Register'>
         </pre>
-        <div >
-       <button type='button' class='padding'>Register</button>
-       </div>
     </form>
+    <h1 id='statusField' style="text-align: center"></h1>
+    <script type='text/javascript' src='java.js'></script>
     </div>
     <footer>
     <div class="row">

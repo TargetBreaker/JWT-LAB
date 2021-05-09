@@ -24,7 +24,11 @@ header nav {
   float: right;
   padding-top: 10px;
 }
-li  {
+
+nav .navhead{
+    float:left;
+}
+header li  {
   display:inline;
   padding-right: 25px;
 }
@@ -136,7 +140,7 @@ footer{
 }
 
 .column img{
-    margin-left: 170px;
+    margin-left: 50%;
 }
 .column p{
     text-align: justify;
@@ -149,9 +153,83 @@ footer{
 }
 
 .schoolimg{
-    overflow: hidden;
+    background-image: url(Images/School%20home.png);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
 }
 
+.ddMenu
+{
+    display: none;
+}
+
+/* --------Mobile--------- */
+
+@media screen and (max-width:1400px)
+{
+    ul li:not(:nth-child(1)){
+        display: none;
+    }  
+    
+    ul li a{
+        font-size: 15px;
+    }
+    
+    ul li.ddMenu
+    {
+        display:block;
+        float:right;
+    }
+    .topnav.responsive li.ddMenu{
+        position: absolute;
+        top:0;
+        right:0;
+    }
+    
+    .topnav.responsive{
+        position: relative;
+    }
+    
+    .topnav.responsive h1{
+        display: none;
+    }
+    
+    .topnav.responsive li{
+        display: inline;
+        float:none;
+    }
+    .topnav.responsive li a{
+        display: block;
+        text-align: left;
+        
+    }
+    
+    .column img{
+        width:60px;
+    }
+    
+    .column p{
+        font-size: 15px;
+    }
+    header h1 {
+  float:left;
+  font-size: 22px;
+    
+    }
+    header img{
+    width: 80px;
+    margin:none;
+    padding-top: 10px;
+}
+    .login img{
+        width: 100px;
+    }
+    
+    .column h1{
+        font-size:22px; 
+    }
+}
 
 
 

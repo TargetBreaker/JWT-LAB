@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Login</title>
+    <meta name='viewport' content="width=device-width">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Kaushan Script|Lora">
     <link rel="stylesheet" href="style.css">
@@ -17,6 +18,9 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="Registration.html">Register</a></li>
             <li><a href="Alumni.html">Alumni</a></li>
+            <li><a href='#Placement'>Student personal Info</a></li>
+            <li><a href='#Placement'>Student Academic Info</a></li>
+            <li><a href='about.html'>About</a></li>
           </ul>
         </nav>
       </div>
@@ -25,15 +29,15 @@
     <div class='login'>
     <header>
     <h2>Student Login</h2>
-    <form>
+    <form id="loginform">
        <pre>
-       <b>RollNumber:</b><input type="text" placeholder="RollNumber"><br>
-       <b>Password    :</b><input type="text" placeholder="Password  "><br>
+       <b>RollNumber:</b><input type="text" placeholder="RollNumber" id="username"><br>
+       <b>Password    :</b><input type="password" placeholder="Password  " id="userpass"><br>
+                  <input type='button' value="sign-in" style="background-color: antiquewhite; padding: 5px;"><input type='reset' value="cancel" style="background-color: antiquewhite; padding: 5px;">
        </pre>
-       <div >
-       <button type='button' class='padding'>sign-in</button>
-       </div>
     </form>
+    <h1 id='loginField' style="text-align: center"></h1>
+    <script type='text/javascript' src='java.js'></script>
     <img src='Images/logo-2.png' width='120px'>
     </header>
     </div>
